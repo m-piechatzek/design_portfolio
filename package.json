@@ -1,0 +1,27 @@
+{
+  "name": "design_portfolio",
+  "version": "1.0.0",
+  "description": "its called web fashion look it up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-piechatzek/design_portfolio.git"
+  },
+  "keywords": [
+    "designer"
+  ],
+  "author": "mpiechatzek",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/m-piechatzek/design_portfolio/issues"
+  },
+  "homepage": "https://github.com/m-piechatzek/design_portfolio#readme",
+  "devDependencies": {
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
