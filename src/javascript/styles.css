@@ -1,4 +1,21 @@
 body {
-	color: green;
-	background-color: red;
+	background-color: #1B1B1B;
+	color: white;
+	font-family: 'Gothic A1', sans-serif;
+}
+
+.row {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.fit {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.cover {
+	background-image: url("../../src/images/night-sky-h-min.jpg");
+	background-size: cover;
+
 }
