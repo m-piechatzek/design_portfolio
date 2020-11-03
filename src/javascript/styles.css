@@ -1,21 +1,166 @@
 body {
-	background-color: #1B1B1B;
-	color: white;
-	font-family: 'Gothic A1', sans-serif;
+	background-color: #161718;
+	color: #bfaaad;
+	font-family: 'Lato', sans-serif;
+		margin: 0px;
 }
+	/*font-family: 'Cormorant Garamond', serif;*/
 
+	/*font-family: 'Assistant', sans-serif;*/
+	/*font-family: 'Playfair Display', serif;*/
+	/*'Gothic A1', sans-serif;*/
+
+
+/* GLOBAL */
 .row {
 	width: 1024px;
 	margin: 0 auto;
 }
 
-.fit {
-	display: grid;
-	grid-template-columns: 1fr;
+.h1pad {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.v1pad {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.h2pad {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+.v2pad {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.h3pad {
+	padding-left: 48px;
+	padding-right: 48px;
+}
+.v3pad {
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.no-bullets {
+	list-style-type: none;
 }
 
+.text-center {
+	text-align: center;
+}
+
+/* COLOR */
+.eerie-blackbg {
+	background-color: #161718;
+}
+.dark-liverbg {
+	background-color: #5c5659;
+}
+.light-greybg {
+	background-color: #cad3d2;
+}
+.whitebg {
+	background-color: #fdfcfc;
+}
+.silver-pinkbg {
+	background-color: #bfaaad;
+}
+.raisin-blackbg {
+	background-color: #362e3e;
+}
+
+/* TEXT COLOR */
+.eerie-blacktext {
+	color: #161718;
+}
+.dark-livertext {
+	color: #5c5659;
+}
+.light-greytext {
+	color: #cad3d2;
+}
+.whitetext {
+	color: #fdfcfc;
+}
+.silver-pinktext {
+	color: #bfaaad;
+}
+.raisin-blacktext {
+	color: #362e3e;
+}
+
+/* LINK */
+a {
+	/*color: #fdfcfc;*/
+	color: #bfaaad;
+	
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fdfcfc;
+	
+	/*color: #bfaaad;*/
+}
+
+a:visited {
+	color: #bfaaad;
+
+	/*color: #fdfcfc;*/
+}
+
+/* TEXT */
+li {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.shadow {
+	 text-shadow: 0px 4px 0px #161718;
+}
+
+/* HEADER */
+.menu {
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 3fr .7fr .7fr .7fr .3fr;
+	grid-template-rows: 1fr;
+	
+	grid-gap: 10px;
+}
+
+	.menu .portfolio {
+
+		grid-column: 2 / span 1;
+	}
+
+	.menu .resume {
+		grid-column: 3 / span 1;
+	}
+
+	.menu .contact {
+		grid-column: 4 / span 1;
+	}
 .cover {
-	background-image: url("../../src/images/night-sky-h-min.jpg");
+	/*background-image: url("../../src/images/night-sky-h-min.jpg");*/
+	background-image: url("../../src/images/mountain-night.jpg");
 	background-size: cover;
 
+}
+.give-me-space {
+	margin-top: 25%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+
+}
+
+.cover h1 {
+	font-size: 5em;
+	margin: unset;
+	letter-spacing: 4px;
+}
+.cover h6 {
+	font-size: 1.4em;
+	margin: unset;
+	letter-spacing: 4px;
 }
