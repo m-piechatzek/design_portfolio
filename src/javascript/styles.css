@@ -1,9 +1,11 @@
 body {
 	background-color: #161718;
 	color: #bfaaad;
+
 	font-family: 'Lato', sans-serif;
 		margin: 0px;
 }
+	/*font-family: 'Lato', sans-serif;*/
 	/*font-family: 'Cormorant Garamond', serif;*/
 
 	/*font-family: 'Assistant', sans-serif;*/
@@ -91,22 +93,16 @@ body {
 
 /* LINK */
 a {
-	/*color: #fdfcfc;*/
-	color: #bfaaad;
-	
+	color: #bfaaad;	
 	text-decoration: none;
 }
 
 a:hover {
 	color: #fdfcfc;
-	
-	/*color: #bfaaad;*/
 }
 
 a:visited {
 	color: #bfaaad;
-
-	/*color: #fdfcfc;*/
 }
 
 /* TEXT */
@@ -116,7 +112,7 @@ li {
 }
 
 .shadow {
-	 text-shadow: 0px 4px 0px #161718;
+	 text-shadow: 0px 6px 0px #161718;
 }
 
 /* HEADER */
@@ -127,6 +123,9 @@ li {
 	grid-template-rows: 1fr;
 	
 	grid-gap: 10px;
+	opacity: 1 !important;
+	z-index: 11;
+
 }
 
 	.menu .portfolio {
@@ -135,27 +134,49 @@ li {
 	}
 
 	.menu .resume {
+	
 		grid-column: 3 / span 1;
 	}
 
 	.menu .contact {
+
 		grid-column: 4 / span 1;
 	}
 .cover {
 	/*background-image: url("../../src/images/night-sky-h-min.jpg");*/
 	background-image: url("../../src/images/mountain-night.jpg");
 	background-size: cover;
+	opacity: 1;
 
 }
 .give-me-space {
-	margin-top: 25%;
+	margin-top: 20%;
 	margin-left: 5%;
 	margin-bottom: 5%;
 
 }
 
+/* LINES */
+/* The progress container (grey background) */
+.progress-container {
+  width: 20%;
+  height: 3px;
+  background: rgb(253,252,252,0);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 3px;
+  background: #fdfcfc;
+  width: 5%;
+}
+
 .cover h1 {
-	font-size: 5em;
+	/*font-family: 'Spectral SC', serif;*/
+	/*font-family: 'Lora', serif;*/
+		/*font-family: 'Josefin Slab', serif;*/
+			/*font-family: 'Playfair Display', serif;*/
+	font-size: 6.4em;
 	margin: unset;
 	letter-spacing: 4px;
 }

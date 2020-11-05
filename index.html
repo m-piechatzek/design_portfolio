@@ -4,32 +4,68 @@
 <head>
     <title>MP Designs</title>
     <script src="dist/bundle.js"></script>
-    <!--     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Raleway:wght@300&display=swap" rel="stylesheet">
-	-->
-<!-- 	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Playfair+Display&display=swap" rel="stylesheet"> -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cormorant+Garamond:wght@300&family=Playfair+Display&display=swap" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- original -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/javascript/styles.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
     <!-- HEADER -->
     <section>
-        <div class="cover">
+        <div id="cover" class="cover">
             <ul class="menu no-bullets">
-                <li class="portfolio shadow h1pad v1pad"><a href="#portfolio">PORTFOLIO</a></li>
-                <li class="resume shadow h1pad v1pad"><a href="#resume">RESUME</a></li>
-                <li class="contact shadow h1pad v1pad"><a href="#contact">CONTACT</a></li>
+                <li class="portfolio shadow h1pad v1pad"><a href="#portfolio">Portfolio</a></li>
+                <li class="resume shadow h1pad v1pad"><a href="#resume">Resume</a></li>
+                <li class="contact shadow h1pad v1pad"><a href="#contact">Contact</a></li>
             </ul>
             <div class="title give-me-space v2pad">
+                <div class="progress-container v2pad">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
                 <h6 class="whitetext shadow">HELLO, MY NAME IS</h6>
-                <h1 class="shadow">MONIKA,</h1>
-                 <h6 class="whitetext shadow">I AM A</h6>
-                <h1 class="shadow">WEBSITE DESIGNER.</h1>
+                <h1 class="shadow">MONIKA</h1>
+                <h6 class="whitetext shadow">I AM A</h6>
+                <h1 class="shadow">WEBSITE DESIGNER</h1>
             </div>
         </div>
     </section>
+    <!-- ABOUT -->
+    <section>
+        <h6>ABOUT</h6>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+        // if (winScroll >= 100) {
+            let scrollForDim = (350 - winScroll) / 100;
+            if (scrollForDim < .60) {
+                scrollForDim = .60;
+            }
+
+            console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+            document.getElementById("cover").style.opacity = scrollForDim;
+        // }
+        // if (winScroll <= 99) {
+        //     document.getElementById("cover").style.opacity = 1;
+        // }
+    }
+    </script>
 </body>
 
 </html>
