@@ -20,9 +20,10 @@
                 <li class="resume shadow h1pad v1pad"><a href="#resume">Resume</a></li>
                 <li class="contact shadow h1pad v1pad"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="title give-me-space v2pad">
-                <div class="progress-container v2pad">
-                    <div class="progress-bar" id="myBar"></div>
+            <div class="title give-me-space v6bottom">
+                <div class="progress-container v2bottom">
+                    <div class="progress-bar" id="myBar">
+                    </div>
                 </div>
                 <h6 class="whitetext shadow">HELLO, MY NAME IS</h6>
                 <h1 class="shadow">MONIKA</h1>
@@ -32,8 +33,9 @@
         </div>
     </section>
     <!-- ABOUT -->
-    <section>
-        <h6>ABOUT</h6>
+    <section class="about v6pad h6pad row m10top dark-liverbg ">
+    	<h6>1989   |   Present</h6>
+        <h3>ABOUT</h3>
         <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
         <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
         <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
@@ -50,20 +52,19 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
+        if(scrolled <=10){scrolled = 10};
         document.getElementById("myBar").style.width = scrolled + "%";
 
-        // if (winScroll >= 100) {
-            let scrollForDim = (350 - winScroll) / 100;
-            if (scrollForDim < .60) {
-                scrollForDim = .60;
-            }
+// Scroll for dim
+        let scrollForDim = (350 - winScroll) / 100;
 
-            console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
-            document.getElementById("cover").style.opacity = scrollForDim;
-        // }
-        // if (winScroll <= 99) {
-        //     document.getElementById("cover").style.opacity = 1;
-        // }
+        if (scrollForDim < .50) {
+            scrollForDim = .50;
+        }
+
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+        document.getElementById("cover").style.opacity = scrollForDim;
+
     }
     </script>
 </body>
