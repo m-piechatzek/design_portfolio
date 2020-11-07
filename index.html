@@ -33,15 +33,38 @@
         </div>
     </section>
     <!-- ABOUT -->
-    <section class="about v6pad h6pad row m10top dark-liverbg ">
-    	<h6>1989   |   Present</h6>
-        <h3>ABOUT</h3>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-        <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+    <section>
+        <div class="about v6pad h6right row m10top  dark-liverbg">
+            <div class="bio">
+
+                <h3>ABOUT</h3>
+                <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+                <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+            </div>
+            <div class="birthday">
+                <h6>1989 | Present</h6>
+            </div>
+            <div class="me-pics">
+                <img src="src/images/computer-water.jpg" alt="computer water">
+            </div>
+            <div class="me-pics2">
+                <img src="src/images/computer-water.jpg" alt="computer water">
+            </div>
+            <div class="website-designer">
+                <h6>Website Designer</h6>
+            </div>
+            <div class="bio-2 eerie-blackbg v2pad h6pad">
+            	 <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art.</p>
+            	 <h3>DESIGN</h3>
+            	 <h3>MINECRAFT</h3>
+            	 <h3>FRIENDS</h3>
+            	 <h3>WALKS</h3>
+            	 <h3>RASPI</h3>
+            </div>
+            <div class="small-bio">
+            	<h1>I Like Plants</h1>
+            </div>
+        </div>
     </section>
     <!-- JAVASCRIPT -->
     <script>
@@ -52,10 +75,10 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        if(scrolled <=10){scrolled = 10};
+        if (scrolled <= 10) { scrolled = 10 };
         document.getElementById("myBar").style.width = scrolled + "%";
 
-// Scroll for dim
+        // Scroll for dim
         let scrollForDim = (350 - winScroll) / 100;
 
         if (scrollForDim < .50) {
