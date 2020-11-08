@@ -201,6 +201,7 @@ body {
 
     padding-bottom: 96px;
 }
+
 /*EXTRA*/
 .no-bullets {
     list-style-type: none;
@@ -284,6 +285,13 @@ li {
     text-shadow: 0px 6px 0px #161718;
 }
 
+/*IMG*/
+/*.row img {
+	 object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}*/
+
 /* HEADER */
 .menu {
     margin: 0px;
@@ -363,62 +371,163 @@ li {
 
 /* ABOUT */
 .about {
-	display: grid;
-	grid-template-columns: 6rem 1fr .3fr 1fr .3fr;
-	grid-template-rows: 1fr .3fr 1fr .3fr;
-	grid-column-gap: 15px;
+    display: grid;
+    grid-template-columns: 6rem 1fr .3fr 1fr .3fr;
+    grid-template-rows: 1fr .3fr 1fr .3fr;
+    grid-column-gap: 15px;
 }
 
 .about .bio {
-	grid-column: 2 / span 1;
-	grid-row: 1 / span 1;
-	align-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
 }
+
 .about .birthday {
-	grid-column: 3 / span 1;
-	grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
 }
+
 .about .me-pics {
-	grid-column: 4 / span 2;
-	grid-row: 1 / span 2;
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
 }
+
 .about .me-pics2 {
-	grid-column: 3 / span 2;
-	grid-row: 2 / span 2;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
 }
+
 .about .bio-2 {
-	grid-column: 1 / span 2;
-	grid-row: 3 / span 2;
+/*    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;*/
+        grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+
 }
 
 .about .website-designer {
-	grid-column: 5 / span 1;
-	grid-row: 3 / span 1;
-	align-self: center;
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 1;
+    align-self: center;
 }
+
 .about .small-bio {
-	grid-column: 4 / span 1;
-	grid-row: 4 / span 1;
-	font-size: 2em;
-	align-self: center;
-	letter-spacing: 8px;
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    font-size: 2em;
+    align-self: center;
+    letter-spacing: 8px;
 }
-.me-pics>img, .me-pics2>img {
-	 object-fit: cover;
-  width: 100%;
-  max-height: 100%;
+
+.me-pics>img,
+.me-pics2>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 .m10top {
-	margin-top: 10rem;
+    margin-top: 10rem;
 }
+
 .about h3 {
     margin-top: 1rem;
     font-size: 2em;
 }
+
 .about h6 {
-	writing-mode: vertical-rl;
-text-orientation: upright; 
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+}
+
+/*PORTFOLIO*/
+
+.portfolio h3 {
+
+    margin-top: 2rem;
+    font-size: 2em;
+
+}
+
+/*PORTFOLIO: MONIKA PIECHATZEK*/
+.portfolio h1 {
+
+    margin-top: 2rem;
+    font-size: 4.4em;
+}
+
+.portfolio h4 {
+
+    margin-top: 1.6rem;
+    font-size: 2em;
+
+}
+
+.portfolio h6 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.portfolio .monika-portfolio {
+    display: grid;
+    grid-template-columns: .3fr 1fr 1fr .3fr;
+    grid-template-rows: 1fr 1fr .1fr;
+    grid-gap: 20px;
+
+}
+.portfolio .monika-portfolio div:nth-child(1) {
+	    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    align-self: center;
+
+}
+.portfolio .monika-portfolio div:nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+
+}
+.portfolio .monika-portfolio div:nth-child(3) {
+      grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
 
 
+}
+.portfolio .monika-portfolio div:nth-child(2)>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    z-index: 11;
+}
+
+.portfolio .portfolio-imgs {
+	display: grid;
+	grid-template-columns: .1fr .5fr .5fr .5fr .1fr;
+	grid-template-rows: .15fr .12fr .1fr .1fr ;
+
+}
+.portfolio .portfolio-imgs img:nth-child(1){
+	grid-column: 2 / span 3;
+	grid-row: 1 / span 3;
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: #161718;*/
+
+}
+.portfolio .portfolio-imgs img:nth-child(2){
+	grid-column: 3 / span 3;
+	grid-row: 2 / span 3;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #362e3e;
+}
+.portfolio .portfolio-imgs img:nth-child(3){
+	grid-column: 1 / span 3;
+	grid-row: 3 / span 2;
+}
+
+.portfolio h5 {
+	   /*margin-top: 1.6rem;*/
+    font-size: .9em;
 }
