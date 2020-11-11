@@ -533,3 +533,42 @@ li {
 	   /*margin-top: 1.6rem;*/
     font-size: .9em;
 }
+/*RESUME*/
+
+.resume .resume-inside {
+	display: grid;
+	grid-template-columns: .3fr .5fr 1fr;
+	grid-template-rows: .1fr .7fr 2fr;
+}
+
+.resume-inside>div {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+}
+
+.resume-inside>ul {
+	grid-column: 1 / span 3;
+	grid-row: 3 / span 1;
+}
+.resume h3 {
+	  margin-top: 2rem;
+    font-size: 2em;
+}
+
+.resume ul {
+	padding-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
