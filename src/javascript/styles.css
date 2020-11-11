@@ -5,6 +5,8 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0px;
 }
+ /*filter: invert(1) hue-rotate(210deg);*/
+
 
 /*font-family: 'Lato', sans-serif;*/
 /*font-family: 'Cormorant Garamond', serif;*/
@@ -340,7 +342,7 @@ li {
 /* LINES */
 /* The progress container (grey background) */
 .progress-container {
-    width: 20%;
+    width: 90%;
     height: 3px;
     background: rgb(253, 252, 252, 0);
 }
@@ -349,7 +351,7 @@ li {
 .progress-bar {
     height: 3px;
     background: #fdfcfc;
-    width: 10%;
+    width: 3%;
 }
 
 /*COVER TITLES*/

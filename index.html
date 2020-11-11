@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/javascript/styles.css">
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
 </head>
 
 <body>
@@ -32,6 +38,15 @@
             </div>
         </div>
     </section>
+    <!--     <div class="rellax">
+        I’m that default chill speed of "-2"
+    </div>
+    <div class="rellax" data-rellax-speed="7">
+        I’m super fast!!
+    </div>
+    <div class="rellax" data-rellax-speed="-4">
+        I’m extra slow and smooth
+    </div> -->
     <!-- ABOUT -->
     <section>
         <div class="about v6pad h6right row m10top  dark-liverbg">
@@ -43,16 +58,16 @@
             <div class="birthday">
                 <h6>1989 | Present</h6>
             </div>
-            <div class="me-pics">
+            <div class="me-pics rellax" data-rellax-speed="-0.5">
                 <img src="src/images/computer-water.jpg" alt="computer water">
             </div>
-            <div class="me-pics2">
+            <div class="me-pics2 rellax" data-rellax-speed="-0.5">
                 <img src="src/images/computer-water.jpg" alt="computer water">
             </div>
             <div class="website-designer">
                 <h6>Website Designer</h6>
             </div>
-            <div class="bio-2 raisin-blackbg v2pad h6pad">
+            <div class="bio-2 raisin-blackbg v2pad h6pad rellax" data-rellax-speed="-0.5">
                 <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art.</p>
                 <h3>DESIGN</h3>
                 <h3>MINECRAFT</h3>
@@ -60,7 +75,7 @@
                 <h3>WALKS</h3>
                 <h3>RASPI</h3>
             </div>
-            <div class="small-bio">
+            <div class="small-bio rellax" data-rellax-speed="-0.5">
                 <h1>I Like Plants</h1>
             </div>
         </div>
@@ -70,17 +85,17 @@
             <div class="portfolio v6pad ">
                 <h3 class="v2pad">PORTFOLIO</h3>
                 <div class="monika-portfolio">
-                    <div>
+                    <div class="rellax" data-rellax-speed="1">
                         <h6>oct | 31 | 2020</h6>
                         <h1 class="whitetext">MONIKA PIECHATZEK PORTFOLIO</h1>
                         <p>My current portfolio website to showcase my skills. Used those layers lots, they're so hot right now. Also smol bits of animationz. Enjoi.</p>
                     </div>
                     <div class="dark-liverbg v6pad h2pad portfolio-imgs">
-                        <img src="src/images/mini-mon-pie-website.png" alt="">
-                        <img src="src/images/about.png" alt="">
-                        <img src="src/images/portfolio.png" alt="">
+                        <img class="rellax" data-rellax-speed="0.5" src="src/images/mini-mon-pie-website.png" alt="">
+                        <img class="rellax" data-rellax-speed="0.5" src="src/images/about.png" alt="">
+                        <img class="rellax" data-rellax-speed="0.5" src="src/images/portfolio.png" alt="">
                     </div>
-                    <div class="raisin-blackbg v3pad h3pad">
+                    <div class="raisin-blackbg v3pad h3pad rellax" data-rellax-speed="1">
                         <h4>Beauty Specs</h4>
                         <div>
                             <h5>Inspirations</h5>
@@ -103,7 +118,29 @@
             </div>
         </div>
     </section>
+    <!-- RESUME -->
+    <section>
+        <div class="row v3pad raisin-blackbg">
+            <ul class="fade">
+                <li>test</li>
+                <li>ttt</li>
+                <li>t</li>
+                <li>et</li>
+            </ul>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section>
+        <div class="row h6left">
+        </div>
+    </section>
     <!-- JAVASCRIPT -->
+    <script src="rellax.min.js"></script>
+   
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+		
     <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() { myFunction() };
@@ -112,7 +149,9 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        if (scrolled <= 10) { scrolled = 10 };
+
+        if (scrolled < 3) { scrolled = 3 };
+        console.log(scrolled, "height");
         document.getElementById("myBar").style.width = scrolled + "%";
 
         // Scroll for dim
@@ -124,8 +163,24 @@
 
         console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
         document.getElementById("cover").style.opacity = scrollForDim;
+        // for moving photo
+
 
     }
+    // RELLAX
+    var rellax = new Rellax('.rellax');
+
+    // SLIDER
+    $(document).ready(function() {
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+             arrows: false,
+        });
+    });
     </script>
 </body>
 
