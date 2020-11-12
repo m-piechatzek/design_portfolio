@@ -581,33 +581,42 @@ li {
 /*RESUME GRID*/
 .resume-inside-li {
     display: grid;
-    grid-template-columns: 1fr .5fr .3fr;
-    grid-template-rows: .5fr .7fr 1fr;
+    grid-template-columns: .3fr 1fr .5fr .5fr;
+    grid-template-rows: .5fr .5fr .1fr .1fr .5fr .5fr;
+
 }
 
-
 .resume-inside-li>h4 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 4;
+    grid-row: 1;
 
 }
 
 .resume-inside-li>div:nth-child(2) {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+
 }
 
-.resume-inside-li>img {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
-        object-fit: cover;
+/*.resume-inside-li>img {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    object-fit: cover;
     width: 100%;
     max-height: 100%;
+}*/
+
+.resume-inside-li>div:nth-child(3) {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 2;
+
 }
 
-.resume-inside-li>div:nth-child(4) {
-    grid-column: 1 / span 3;
-    grid-row: 3 / span 1;
-    
+/*RESUME SLIDER*/
+.slick-dots li button:before {
+    color: #FDFCFC !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FDFCFC !important;
 }
