@@ -22,6 +22,7 @@
             <ul class="menu no-bullets">
                 <li class="portfolio shadow h1pad v1pad"><a href="#portfolio">Portfolio</a></li>
                 <li class="resume shadow h1pad v1pad"><a href="#resume">Resume</a></li>
+            	    <li class="tutorials shadow h1pad v1pad"><a href="#tutorials">Tutorials</a></li>
                 <li class="contact shadow h1pad v1pad"><a href="#contact">Contact</a></li>
             </ul>
             <div class="title give-me-space v6bottom">
@@ -36,16 +37,6 @@
             </div>
         </div>
     </section>
-    <!--     <div class="rellax">
-        I’m that default chill speed of "-2"
-    </div>
-    <div class="rellax" data-rellax-speed="7">
-        I’m super fast!!
-    </div>
-    <div class="rellax" data-rellax-speed="-4">
-        I’m extra slow and smooth
-    </div> -->
-    <!-- ABOUT -->
     <section>
         <div class="about v6pad h6right row m10top  dark-liverbg">
             <div class="bio">
@@ -254,15 +245,18 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact">
-        <div class="row h6left v6top">
+    <section class="contact v6pad">
+        <div class="row h6left v6pad">
             <h3>CONTACT</h3>
-            <p>Please feel free to contact me through any of my social media outlets or ask me a question below!</p>
             <div class="form">
-                <img src="src/images/computer-water.jpg" alt="computer water">
+                <p class="v2pad up">Please feel free to contact me through any of my social media outlets or ask me a question below!</p>
+                <img class="rellax down" data-rellax-speed=".6" src="src/images/computer-water.jpg" alt="computer water">
                 <!-- other form -->
                 <div class="container dark-liverbg" id="container">
-                    <form action="mailto:piechatzek@hotmail.com" method="post" id="contact_form">
+                    <form action="https://formsubmit.co/piechatzek@hotmail.com" method="post" id="contact_form">
+                    	<!-- need to make a THANK YOU page -->
+                    	<input type="hidden" name="_next" value="https://www.google.ca/">
+                    
                         <div class="name">
                             <label for="name"></label>
                             <input type="text" placeholder="My name is" name="name" id="name_input" required>
@@ -282,6 +276,7 @@
                 </div><!-- // End #container -->
             </div>
         </div>
+        <p class="text-center">MP Designs 2020</p>
     </section>
     <!-- JAVASCRIPT -->
     <script src="rellax.min.js"></script>

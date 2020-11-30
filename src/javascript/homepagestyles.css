@@ -1,0 +1,454 @@
+body {
+    background-color: #161718;
+    color: #bfaaad;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+/* COLOR */
+.eerie-blackbg {
+    background-color: #161718;
+}
+
+.dark-liverbg {
+    background-color: #5c5659;
+}
+
+.light-greybg {
+    background-color: #cad3d2;
+}
+
+.whitebg {
+    background-color: #fdfcfc;
+}
+
+.silver-pinkbg {
+    background-color: #bfaaad;
+}
+
+.raisin-blackbg {
+    background-color: #362e3e;
+}
+
+/* TEXT COLOR */
+.eerie-blacktext {
+    color: #161718;
+}
+
+.dark-livertext {
+    color: #5c5659;
+}
+
+.light-greytext {
+    color: #cad3d2;
+}
+
+.whitetext {
+    color: #fdfcfc;
+}
+
+.silver-pinktext {
+    color: #bfaaad;
+}
+
+.raisin-blacktext {
+    color: #362e3e;
+}
+
+/* LINK */
+a {
+    color: #bfaaad;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fdfcfc;
+}
+
+a:visited {
+    color: #bfaaad;
+}
+
+/* GLOBAL */
+
+.vertical-word {
+	 writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.shadow-text {
+    text-shadow: 0px 6px 0px #161718;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+/* PADDING GLOBAL */
+	.h1pad {
+	    padding-left: 3vw;
+	    padding-right: 3vw;
+	}
+
+	.v1pad {
+	    padding-top: 3vh;
+	    padding-bottom: 3vh;
+	}
+
+	.h2pad {
+	    padding-left: 6vw;
+	    padding-right: 6vw;
+	}
+
+	.v2pad {
+	    padding-top: 6vh;
+	    padding-bottom: 6vh;
+	}
+
+	.h3pad {
+	    padding-left: 9vw;
+	    padding-right: 9vw;
+	}
+
+	.v3pad {
+	    padding-top: 9vh;
+	    padding-bottom: 9vh;
+	}
+
+	.h4pad {
+	    padding-left: 12vw;
+	    padding-right: 12vw;
+	}
+
+	.v4pad {
+	    padding-top: 12vh;
+	    padding-bottom: 12vh;
+	}
+
+	.h5pad {
+	    padding-left: 15vw;
+	    padding-right: 15vw;
+	}
+
+	.v5pad {
+	    padding-top: 15vh;
+	    padding-bottom: 15vh;
+	}
+
+	.h6pad {
+	    padding-left: 18vw;
+	    padding-right: 18vw;
+	}
+
+	.v6pad {
+	    padding-top: 18vh;
+	    padding-bottom: 18vh;
+	}
+
+	/* PADDING GLOBAL LEFT */
+	.h1left {
+	    padding-left: 3vw;
+	}
+
+	.v1bottom {
+	    padding-bottom: 3vh;
+	}
+
+	.h2left {
+	    padding-left: 6vw;
+	}
+
+	.v2bottom {
+	    padding-bottom: 6vh;
+	}
+
+	.h3left {
+	    padding-left: 9vw;
+	}
+
+	.v3bottom {
+	    padding-bottom: 9vh;
+	}
+
+	.h4left {
+	    padding-left: 12vw;
+	}
+
+	.v4bottom {
+	    padding-bottom: 12vh;
+	}
+
+	.h5left {
+	    padding-left: 15vw;
+	}
+
+	.v5bottom {
+	    padding-bottom: 15vh;
+	}
+
+	.h6left {
+	    padding-left: 18vw;
+	}
+
+	.v6bottom {
+	    padding-bottom: 18vh;
+	}
+
+	/* PADDING GLOBAL RIGHT */
+	.h1right {
+	    padding-right: 3vw;
+	}
+
+	.v1top {
+	    padding-top: 3vh;
+	}
+
+	.h2right {
+	    padding-right: 6vw;
+	}
+
+	.v2top {
+	    padding-top: 6vh;
+	}
+
+	.h3right {
+	    padding-right: 9vw;
+	}
+
+	.v3top {
+	    padding-top: 9vh;
+	}
+
+	.h4right {
+	    padding-right: 12vw;
+	}
+
+	.v4top {
+	    padding-top: 12vh;
+	}
+
+	.h5right {
+	    padding-right: 15vw;
+	}
+
+	.v5top {
+	    padding-top: 15vh;
+	}
+
+	.h6right {
+	    padding-right: 18vw;
+	}
+
+	.v6top {
+	    padding-top: 18vh;
+	}
+
+
+/* HEADER */
+.menu {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 3fr .7fr .7fr .7fr .7fr .3fr;
+    grid-template-rows: 1fr;
+
+    grid-gap: 10px;
+    opacity: 1 !important;
+    z-index: 11;
+
+}
+
+.menu .portfolio {
+
+    grid-column: 2 / span 1;
+}
+
+.menu .resume {
+
+    grid-column: 3 / span 1;
+}
+
+.menu .tutorials {
+
+    grid-column: 4 / span 1;
+}
+
+.menu .contact {
+	grid-column: 5 / span 1;
+}
+
+/*COVER*/
+.cover {
+  
+    background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
+    background-size: cover;
+    width: 100%;
+    opacity: 1;
+
+}
+
+.give-me-space {
+    margin-top: 18%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+/* LINES */
+/* The progress container (grey background) */
+.progress-container {
+    width: 90%;
+    height: 3px;
+    background: rgb(253, 252, 252, 0);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 3px;
+    background: #fdfcfc;
+    width: 3%;
+}
+
+/*COVER TITLES*/
+.cover h1 {
+    font-size: 6.4em;
+    margin: unset;
+    letter-spacing: 4px;
+}
+
+.cover h6 {
+    font-size: 1.4em;
+    margin: unset;
+    letter-spacing: 4px;
+}
+
+
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: .3fr 1fr .3fr 1fr .3fr;
+    grid-template-rows: 1fr .3fr .3fr .3fr;
+    grid-column-gap: 2rem;
+}
+
+.about .bio {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+}
+
+.about .birthday {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.about .masters {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+
+.about .me-pics {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.about .me-pics2 {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.about .bio-2 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+
+}
+
+.about .website-designer {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 1;
+    align-self: center;
+}
+
+.about .small-bio {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    font-size: 2em;
+    align-self: center;
+    letter-spacing: 8px;
+}
+
+/* ABOUT PAD */
+
+@media (max-width: 991.98px) { 
+	.about {
+	width: inherit;
+	    grid-template-columns: .3fr 1fr .3fr;
+	    grid-template-rows: 1fr .3fr .3fr 1fr .3fr;
+	    grid-row-gap: 2rem;
+
+	}
+
+	.about .birthday {
+	    grid-column: 1 / span 1;
+	    grid-row: 1 / span 1;
+	}
+
+	.about .bio {
+	    grid-column: 2 / span 1;
+	    grid-row: 1 / span 1;
+	    align-self: center;
+	}
+
+	.about .me-pics {
+	    grid-column: 2 / span 1;
+	    grid-row: 2 / span 1;
+	}
+
+	.about .me-pics2 {
+	    grid-column: 2 / span 1;
+	    grid-row: 3 / span 1;
+	}
+
+	.about .bio-2 {
+	    grid-column: 2 / span 1;
+	    grid-row: 4 / span 1;
+
+	}
+
+	.about .masters {
+		grid-column: 1 / span 1;
+		grid-row: 4 / span 1;
+	}
+
+	.about .website-designer {
+	    grid-column: 3 / span 1;
+	    grid-row: 3 / span 1;
+	    align-self: none;
+	}
+
+	.about .small-bio {
+	    grid-column: 2 / span 1;
+	    grid-row: 5 / span 1;
+	    font-size: 2em;
+	    align-self: center;
+	    letter-spacing: 8px;
+	}
+}
+
+.me-pics>img,
+.me-pics2>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.about h3 {
+    margin-top: 1rem;
+    font-size: 2em;
+}
+
+.about h6 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+}

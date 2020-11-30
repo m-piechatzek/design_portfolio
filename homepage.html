@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Designs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="src/javascript/homepagestyles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section class="cover">
+        <div class="container">
+            <div id="cover">
+                <ul class="menu no-bullets">
+                    <li class="portfolio shadow-text h1pad v1pad">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="resume shadow-text h1pad v1pad">
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li class="tutorials shadow-text h1pad v1pad">
+                        <a href="#tutorials">Tutorials</a>
+                    </li>
+                    <li class="contact shadow-text h1pad v1pad">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="title give-me-space v6bottom">
+                    <div class="progress-container v2bottom">
+                        <div class="progress-bar" id="myBar">
+                        </div>
+                    </div>
+                    <h6 class="whitetext shadow-text">HELLO, MY NAME IS</h6>
+                    <h1 class="shadow-text">MONIKA</h1>
+                    <h6 class="whitetext shadow-text">I AM A</h6>
+                    <h1 class="shadow-text">WEBSITE DESIGNER</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section>
+        <div class="container-fluid">
+            <div class="container dark-liverbg about v4bottom v3top">
+                <div class="bio">
+                    <h3 class="v1bottom">ABOUT</h3>
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+                </div>
+                <div class="birthday v1top">
+                    <h6>1989 | Present</h6>
+                </div>
+                <div class="me-pics">
+                    <img src="src/images/computer-water.jpg" alt="computer water">
+                </div>
+                <div class="me-pics2">
+                    <img src="src/images/computer-water.jpg" alt="computer water">
+                </div>
+                <div class="website-designer">
+                    <h6>Website Designer</h6>
+                </div>
+                   <div class="masters">
+                    <h6>Educational Technology In Progress</h6>
+                </div>
+                <div class="bio-2 raisin-blackbg v3pad h1pad ">
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art.</p>
+                    <div class="v2top">
+                        <h3>DESIGN</h3>
+                        <h3>MINECRAFT</h3>
+                        <h3>FRIENDS</h3>
+                        <h3>WALKS</h3>
+                        <h3>RASPI</h3>
+                        <h3>CODING</h3>
+                        <h3>EDUCATIONAL TECHNOLOGY</h3>
+                        <h3>MERLOT</h3>
+                    </div>
+                </div>
+                <div class="small-bio v2top">
+                    <h1 class="text-center">I Like Plants And Red Wine And Vanilla and Coding and Basic Things.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+
+        if (scrolled < 3) { scrolled = 3 };
+        console.log(scrolled, "height");
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+        // Scroll for dim
+        let scrollForDim = (350 - winScroll) / 100;
+
+        if (scrollForDim < .50) {
+            scrollForDim = .50;
+        }
+
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+        document.getElementById("cover").style.opacity = scrollForDim;
+        // for moving photo
+
+
+    }
+    // RELLAX
+    var = new Rellax('.');
+
+    // SLIDER
+    $(document).ready(function() {
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+            adaptiveHeight: true
+        });
+    });
+    </script>
+</body>
+
+</html>

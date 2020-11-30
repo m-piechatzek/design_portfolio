@@ -292,6 +292,13 @@ strong {
     font-size: 1.15em;
 }
 
+.up {
+	z-index: 11;
+}
+.down {
+	z-index: -1;
+}
+
 /*IMG*/
 /*.row img {
 	 object-fit: cover;
@@ -303,7 +310,7 @@ strong {
 .menu {
     margin: 0px;
     display: grid;
-    grid-template-columns: 3fr .7fr .7fr .7fr .3fr;
+    grid-template-columns: 3fr .7fr .7fr .7fr .7fr .3fr;
     grid-template-rows: 1fr;
 
     grid-gap: 10px;
@@ -322,9 +329,13 @@ strong {
     grid-column: 3 / span 1;
 }
 
-.menu .contact {
+.menu .tutorials {
 
     grid-column: 4 / span 1;
+}
+
+.menu .contact {
+	grid-column: 5 / span 1;
 }
 
 /*COVER*/
@@ -333,6 +344,7 @@ strong {
     /*background: linear-gradient(transparent, #ffffff), url("../../src/images/mountain-night.jpg");*/
     background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
     background-size: cover;
+    width: 100%;
     opacity: 1;
 
 }
@@ -676,13 +688,17 @@ strong {
 
 .form {
 	display: grid;
-	grid-template-columns: 1fr .3fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: .9fr .5fr .8fr;
+	grid-template-rows: .8fr 2fr;
 }
 
+.form>p {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 1;
+}
 .form>img {
 	grid-column: 2 / span 2;
-	grid-row: 1 / span 1;
+	grid-row: 2 / span 1;
 	 object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -690,7 +706,7 @@ strong {
 
 .form>div {
 	grid-column: 1 / span 2;
-	grid-row: 1 / span 1;
+	grid-row: 2 / span 1;
 	z-index: 11;
 }
 
@@ -721,8 +737,8 @@ strong {
 
     /*border: solid 3px #bfaaad;*/
     max-width: 768px;
-    margin: 60px auto;
-    position: relative;
+    margin: 10vh 0px;
+    /*position: relative;*/
 }
 
 form {
