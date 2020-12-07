@@ -252,8 +252,9 @@ a:visited {
 
 /*BUTTON*/
 .btn {
-	border-radius: unset;
+    border-radius: unset;
 }
+
 .btn-outline-light {
     color: #fdfcfc;
     border-color: #fdfcfc;
@@ -708,7 +709,7 @@ a:visited {
 
 .portfolio h4 {
     margin-top: 1.6rem;
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
 .portfolio h6 {
@@ -776,7 +777,7 @@ a:visited {
 }
 
 .portfolio h5 {
-    font-size: .9em;
+    font-size: 1.25em;
 }
 
 /*MEDIUM PORTFOLIO*/
@@ -832,7 +833,7 @@ a:visited {
         font-size: 1.5em;
     }
 
-     .portfolio .portfolio-imgs {
+    .portfolio .portfolio-imgs {
         grid-template-columns: .3fr 1fr .3fr;
         grid-template-rows: repeat(4, .4fr);
     }
@@ -858,4 +859,295 @@ a:visited {
         grid-row: 3 / span 1;
     }
 
+}
+
+/*RESUME*/
+
+.resume h3 {
+    margin-top: 2rem;
+    font-size: 2em;
+}
+
+.resume h4 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.resume .exp {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: .2fr 1fr;
+}
+
+.resume>div:nth-child(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+
+.resume>div:nth-child(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.resume>div:nth-child(3) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+/*RESUME GRID*/
+.resume-inside-li {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.resume-inside-li>ul>li,
+.resume-inside-li>ul {
+    margin: 0;
+
+}
+
+.resume-inside-li>div:nth-child(3)>ul {
+    padding-left: 0px;
+}
+
+
+/* SMALL MOBILE RESUME */
+
+@media screen and (max-width: 475px) {
+    .resume {
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .4fr 1fr;
+    }
+
+    .resume>div:nth-child(1) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        justify-self: center;
+    }
+
+
+    .resume>div:nth-child(2) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        justify-self: center;
+    }
+
+    .resume>div:nth-child(3) {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+}
+
+
+/*CONTACT*/
+
+.contact h3 {
+    margin-top: 1rem;
+    font-size: 2em;
+}
+
+/*FORM*/
+
+.form {
+    display: grid;
+    grid-template-columns: .9fr .5fr .8fr;
+    grid-template-rows: .5fr 2fr;
+    grid-gap: 25px;
+}
+
+.form>div:nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.form>div:nth-child(1)>ul {
+    padding-left: unset;
+}
+
+.form>img {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.form>div:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    z-index: 11;
+}
+
+@media screen and (max-width: 770px) {
+
+    .form {
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr .6fr 1fr;
+    }
+
+    .form>div:nth-child(1) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .form>img {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+
+    }
+
+    .form>div:nth-child(3) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+}
+
+.container button {
+
+    overflow: visible;
+    text-transform: none;
+}
+
+
+.container button,
+.container input,
+.container textarea {
+    color: #bfaaad;
+    font: inherit;
+
+}
+
+.container input {
+    line-height: normal;
+}
+
+.container textarea {
+    overflow: auto;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'], input[type='email'], textarea[id='question_input'] {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #bfaaad;
+    color: #bfaaad;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus, input[type='email']:focus, textarea[id='question_input']:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.question {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+
+
+textarea[id='question_input'] {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #bfaaad;
+}
+
+:-moz-placeholder {
+    color: #bfaaad;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #bfaaad;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #bfaaad;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #bfaaad;
+    color: #bfaaad;
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #bfaaad;
+    color: #cad3d2;
+}
+
+/*@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}*/
+
+@media screen and (max-width: 480px) {
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+  input[type='text'], input[type='email'], textarea[id='question_input'] {
+        font-size: 0.875em;
+    }
 }

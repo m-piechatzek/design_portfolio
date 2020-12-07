@@ -373,10 +373,6 @@ strong {
 
 /*COVER TITLES*/
 .cover h1 {
-    /*font-family: 'Spectral SC', serif;*/
-    /*font-family: 'Lora', serif;*/
-    /*font-family: 'Josefin Slab', serif;*/
-    /*font-family: 'Playfair Display', serif;*/
     font-size: 6.4em;
     margin: unset;
     letter-spacing: 4px;
@@ -559,26 +555,6 @@ strong {
 }
 
 /*RESUME*/
-
-/*.resume .resume-inside {
-    display: grid;
-    grid-template-columns:  1fr ;
-    grid-template-rows: .5fr .5fr;
-}
-
-
-
-.resume-inside>div {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    
-}
-
-.resume-inside>ul {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-}
-*/
 
 .resume h3 {
     margin-top: 2rem;
