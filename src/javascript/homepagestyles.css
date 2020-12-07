@@ -958,7 +958,7 @@ a:visited {
 .form {
     display: grid;
     grid-template-columns: .9fr .5fr .8fr;
-    grid-template-rows: .5fr 2fr;
+    grid-template-rows: .2fr .1fr .7fr .1fr;
     grid-gap: 25px;
 }
 
@@ -973,7 +973,7 @@ a:visited {
 
 .form>img {
     grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
+    grid-row: 2 / span 3;
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -981,7 +981,7 @@ a:visited {
 
 .form>div:nth-child(3) {
     grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
     z-index: 11;
 }
 
@@ -1009,26 +1009,26 @@ a:visited {
     }
 }
 
-.container button {
+#container button {
 
     overflow: visible;
     text-transform: none;
 }
 
 
-.container button,
-.container input,
-.container textarea {
+#container button,
+#container input,
+#container textarea {
     color: #bfaaad;
     font: inherit;
 
 }
 
-.container input {
+#container input {
     line-height: normal;
 }
 
-.container textarea {
+#container textarea {
     overflow: auto;
 }
 
