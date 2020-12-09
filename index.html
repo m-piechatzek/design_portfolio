@@ -1,90 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP Designs</title>
-    <script src="dist/bundle.js"></script>
-    <!-- original -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/javascript/styles.css">
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+    <!-- styles -->
+    <link rel="stylesheet" href="src/javascript/homepagestyles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/47fa2816b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HEADER -->
+    <!-- d-none d-sm-none d-md-block d-lg-block d-xl-block -->
+    <section class="cover parallax">
+        <div class="container ">
+            <div id="cover">
+                <ul class="menu no-bullets hide-sm">
+                    <li class="portfolio shadow-text h1pad v1pad">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="resume shadow-text h1pad v1pad">
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li class="tutorials shadow-text h1pad v1pad">
+                        <a href="#tutorials">Tutorials</a>
+                    </li>
+                    <li class="contact shadow-text h1pad v1pad">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <nav class="navbar navbar-expand-lg silver-pinktext d-xs-block d-sm-block d-md-none d-lg-none d-xl-none v3top">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span> <i class="fas fa-bars silver-pinktext"></i></span>
+                    </button>
+                    <div class="v1top collapse navbar-collapse silver-pinktext" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link silver-pinktext" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link silver-pinktext" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link silver-pinktext" href="tutorial.html">Tutorial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link silver-pinktext" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="title give-me-space v6bottom">
+                    <div class="progress-container v2bottom">
+                        <div class="progress-bar" id="myBar">
+                        </div>
+                    </div>
+                    <h6 class="whitetext shadow-text">HELLO, MY NAME IS</h6>
+                    <h1 class="shadow-text">MONIKA</h1>
+                    <h6 class="whitetext shadow-text">I AM A</h6>
+                    <h1 class="shadow-text">WEBSITE DESIGNER</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
     <section>
-        <div id="cover" class="cover">
-            <ul class="menu no-bullets">
-                <li class="portfolio shadow h1pad v1pad"><a href="#portfolio">Portfolio</a></li>
-                <li class="resume shadow h1pad v1pad"><a href="#resume">Resume</a></li>
-            	    <li class="tutorials shadow h1pad v1pad"><a href="#tutorials">Tutorials</a></li>
-                <li class="contact shadow h1pad v1pad"><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="title give-me-space v6bottom">
-                <div class="progress-container v2bottom">
-                    <div class="progress-bar" id="myBar">
+        <div class="container-fluid">
+            <div class="container dark-liverbg about v4bottom v3top">
+                <div class="bio">
+                    <div class="progress-container v2bottom">
+                        <div class="progress-bar" id="myBar2">
+                        </div>
+                    </div>
+                    <h3 class="v1bottom">ABOUT</h3>
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
+                </div>
+                <div class="birthday v1top">
+                    <h6>1989 | Present</h6>
+                </div>
+                <div class="me-pics">
+                    <img src="src/images/computer-water.jpg" alt="computer water">
+                </div>
+                <div class="me-pics2">
+                    <img src="src/images/computer-water.jpg" alt="computer water">
+                </div>
+                <div class="website-designer">
+                    <h6>Website Designer</h6>
+                </div>
+                <div class="masters">
+                    <h6>Educational Technology</h6>
+                </div>
+                <div class="bio-2 raisin-blackbg v3pad h1pad ">
+                    <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art.</p>
+                    <div class="v2top">
+                        <h3>DESIGN</h3>
+                        <h3>MINECRAFT</h3>
+                        <h3>FRIENDS</h3>
+                        <h3>WALKS</h3>
+                        <h3>RASPI</h3>
+                        <h3>CODING</h3>
+                        <h3>EDUCATIONAL TECHNOLOGY</h3>
+                        <h3>MERLOT</h3>
                     </div>
                 </div>
-                <h6 class="whitetext shadow">HELLO, MY NAME IS</h6>
-                <h1 class="shadow">MONIKA</h1>
-                <h6 class="whitetext shadow">I AM A</h6>
-                <h1 class="shadow">WEBSITE DESIGNER</h1>
+                <div class="small-bio v2top">
+                    <h1 class="text-center">I Like Plants And Red Wine And Vanilla and Coding and Basic Things.</h1>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="about v6pad h6right row m10top  dark-liverbg">
-            <div class="bio">
-                <h3>ABOUT</h3>
-                <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-                <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art. Gochujang bespoke austin, kale chips jean shorts blog beard heirloom pabst. Ethical lo-fi scenester sustainable freegan tilde hammock, seitan vegan cold-pressed lomo yuccie drinking vinegar. Austin cloud bread ugh, copper mug iPhone artisan DIY tbh YOLO truffaut.</p>
-            </div>
-            <div class="birthday">
-                <h6 class="rellax" data-rellax-speed="-2">1989 | Present</h6>
-            </div>
-            <div class="me-pics rellax" data-rellax-speed="-0.5">
-                <img src="src/images/computer-water.jpg" alt="computer water">
-            </div>
-            <div class="me-pics2 rellax" data-rellax-speed="-0.5">
-                <img src="src/images/computer-water.jpg" alt="computer water">
-            </div>
-            <div class="website-designer">
-                <h6>Website Designer</h6>
-            </div>
-            <div class="bio-2 raisin-blackbg v2pad h6pad rellax" data-rellax-speed="-0.5">
-                <p>IPhone letterpress quinoa tofu. Chia bicycle rights meditation yr, church-key occupy leggings green juice pug asymmetrical you probably haven't heard of them actually brooklyn street art.</p>
-                <h3>DESIGN</h3>
-                <h3>MINECRAFT</h3>
-                <h3>FRIENDS</h3>
-                <h3>WALKS</h3>
-                <h3>RASPI</h3>
-            </div>
-            <div class="small-bio rellax" data-rellax-speed="-0.5">
-                <h1>I Like Plants</h1>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row h6left">
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
             <div class="portfolio v6top ">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar3">
+                            </div>
+                        </div>
                 <h3 class="v2pad">PORTFOLIO</h3>
                 <div class="monika-portfolio">
-                    <div class="rellax" data-rellax-speed="1">
+                    <div>
                         <h6>oct | 31 | 2020</h6>
                         <h1 class="whitetext">MONIKA PIECHATZEK PORTFOLIO</h1>
-                        <p>My current portfolio website to showcase my skills. Used those layers lots, they're so hot right now. Also smol bits of animationz. Enjoi.</p>
+                        <p class="v1pad">My current portfolio website to showcase my skills. Used those layers lots, they're so hot right now. Also smol bits of animationz. Enjoi.</p>
+                        <button type="button" class="btn btn-outline-light"><a href="portfolio.html">View more portfolio items</a></button>
                     </div>
                     <div class="dark-liverbg v6pad h2pad portfolio-imgs">
-                        <img class="rellax" data-rellax-speed="0.5" src="src/images/mini-mon-pie-website.png" alt="">
-                        <img class="rellax" data-rellax-speed="0.5" src="src/images/about.png" alt="">
-                        <img class="rellax" data-rellax-speed="0.5" src="src/images/portfolio.png" alt="">
+                        <img src="src/images/mini-mon-pie-website.png" alt="">
+                        <img src="src/images/about.png" alt="">
+                        <img src="src/images/portfolio.png" alt="">
                     </div>
-                    <div class="raisin-blackbg v3pad h3pad rellax" data-rellax-speed="1">
+                    <div class="raisin-blackbg v3pad h3pad">
                         <h4>Beauty Specs</h4>
                         <div>
                             <h5>Inspirations</h5>
@@ -96,8 +152,9 @@
                         </div>
                         <h4>Tech Specs</h4>
                         <div>
-                            <h5>html</h5>
-                            <h5>css</h5>
+                            <h5>html5</h5>
+                            <h5>css3</h5>
+                            <h5>Bootstrap</h5>
                             <h5>javascript</h5>
                             <h5>jQuery</h5>
                             <h5>webpack</h5>
@@ -109,161 +166,116 @@
         </div>
     </section>
     <!-- RESUME -->
-    <section>
-        <div class="resume">
-            <div class="resume-inside row">
-                <div>
-                    <!--  rellax" data-rellax-speed="0.3" -->
-                    <h6 class="exp rellax" data-rellax-speed="-.5">3 years of experience</h6>
-                    <h3 class="v6top v2bottom h2right h6left">RESUME</h3>
+    <section id="resume">
+        <div class="resume container v6top">
+            <div>
+                <h6 class="exp">3 years of experience</h6>
+            </div>
+            <div>
+            	  <div class="progress-container v2bottom">
+                            <div class="progress-bar" id="myBar4">
+                            </div>
+                        </div>
+                <h3 class="v2bottom">RESUME</h3>
+            </div>
+            <div>
+                <div class="resume-inside-li">
+                    <div class="h2pad v2pad dark-liverbg">
+                        <h4 class="v1bottom">
+                            <strong>Web Developer/Designer</strong>
+                        </h4>
+                        <h5 class="v1bottom">
+                            Thompson Rivers University – Marketing and Communications
+                            <p>May 2019 - Present</p>
+                        </h5>
+                        <button type="button" class="btn btn-outline-light">View more past employment</button>
+                    </div>
+                    <ul class="no-bullets h2pad eerie-blackbg v1pad">
+                        <div class="raisin-blackbg">
+                            <li class="v1pad h1pad">Front-end: HTML5, CSS3, Javascript, jQuery, Foundation 5</li>
+                            <li class="v1pad h1pad">Deployment &amp; Dev Tools: Sublime, ACM Content Management System, Sketch</li>
+                            <li class="v1pad h1pad">Work Flow Tools: ActiveCollab, Microsoft Teams</li>
+                        </div>
+                    </ul>
+                    <div class="h2pad v2top dark-liverbg">
+                        <ul class="no-bullets">
+                            <li class="v1pad">
+                                <div> Work with many clients alongside marketing strategists, content and graphic specialists to design the university’s web pages for specific departments.</div>
+                            </li>
+                            <li class="v1pad">
+                                <div>
+                                    Became familiar with the ACM content management system while using Javascript, HTML5, CSS3 with Foundation 5 Framework, in order to create web pages.</div>
+                            </li>
+                            <li class="v1pad">
+                                <div>
+                                    Use ActiveCollab to keep track of tasks and inform others on task updates as well as Microsoft Teams to write up documentation on processes for my team.</div>
+                            </li>
+                            <li class="v1pad">
+                                <div>
+                                    Uses and embeds third party applications such as Walls.io for pulling in social media posts about the university as well as Form Assembly for creating payment and non-payment forms.</div>
+                            </li>
+                            <li class="v1pad">
+                                <div>
+                                    Creates webpage mockups using Sketch and collaborates with clients on features and layout.</div>
+                            </li>
+                            <li class="v1pad">
+                                <div>
+                                    Adjusted to working remotely due to COVID-19 without issue and held the ability to work efficiently and as effectively as in-office.</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="fade">
-                    <li>
-                        <div class="resume-inside-li dark-liverbg">
-                            <div class="h2pad v2top">
-                                <h4>
-                                    <strong>Web Developer/Designer</strong>
-                                </h4>
-                                <h5>
-                                    Thompson Rivers University – Marketing and Communications
-                                    <p>Present</p>
-                                </h5>
-                            </div>
-                            <ul class=" no-bullets h2pad eerie-blackbg v1pad rellax" data-rellax-speed="0.3">
-                                <div class="raisin-blackbg">
-                                    <li class="v2pad h1pad raisin-blackbg rellax" data-rellax-speed="0.1">Front-end: HTML5, CSS3, Javascript, jQuery, Foundation 5</li>
-                                    <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.1">Deployment &amp; Dev Tools: Sublime, ACM Content Management System, Sketch</li>
-                                    <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.1">Work Flow Tools: ActiveCollab, Microsoft Teams</li>
-                                </div>
-                            </ul>
-                            <div class="h2pad v2bottom v3top">
-                                <ul class="no-bullets">
-                                    <li class="v1pad">
-                                        <div> Work with many clients alongside marketing strategists, content and graphic specialists to design the university’s web pages for specific departments.</div>
-                                    </li>
-                                    <li class="v1pad">
-                                        <div>
-                                            Became familiar with the ACM content management system while using Javascript, HTML5, CSS3 with Foundation 5 Framework, in order to create web pages.</div>
-                                    </li>
-                                    <li class="v1pad">
-                                        <div>
-                                            Use ActiveCollab to keep track of tasks and inform others on task updates as well as Microsoft Teams to write up documentation on processes for my team.</div>
-                                    </li>
-                                    <li class="v1pad">
-                                        <div>
-                                            Uses and embeds third party applications such as Walls.io for pulling in social media posts about the university as well as Form Assembly for creating payment and non-payment forms.</div>
-                                    </li>
-                                    <li class="v1pad">
-                                        <div>
-                                            Creates webpage mockups using Sketch and collaborates with clients on features and layout.</div>
-                                    </li>
-                                    <li class="v1pad">
-                                        <div>
-                                            Adjusted to working remotely due to COVID-19 without issue and held the ability to work efficiently and as effectively as in-office.</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume-inside-li-other dark-liverbg">
-                            <div class="h2pad v2pad">
-                                <h4><strong>
-                                        Software Developer</strong></h4>
-                                <h5>Two Story Robot
-                                    <p>Previous</p>
-                                </h5>
-                            </div>
-                            <ul class=" no-bullets h2pad eerie-blackbg v5pad rellax" data-rellax-speed="0.3">
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">
-                                    Front-end: React, HTML5, CSS3, Javascript</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">Back-end: -</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">
-                                    Deployment & Dev Tools: GitHub, Sublime, OSX</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">
-                                    Work Flow Tools: Github Projects</li>
-                            </ul>
-                            <div class="h2pad">
-                                <ul class="no-bullets">
-                                    <li class="v1pad">
-                                        Learned how to produce software with the React framework and incorporated packages like Material-UI and styled-components.</li>
-                                    <li class="v1pad">
-                                        Implemented the Two Story Robot Software Development Life Cycle and agile development by using Quip documents, Github projects and participated as sprint master.</li>
-                                    <li class="v1pad">
-                                        Communicated and collaborated with other software developers to solve problems or to plan out coding strategies.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume-inside-li-other dark-liverbg">
-                            <div class="h2pad v2pad">
-                                <h4><strong>eLearning Support Technician</strong></h4>
-                                <h5>Thompson Rivers University – Open Learning
-                                    <p>Previous</p>
-                                </h5>
-                            </div>
-                            <ul class=" no-bullets h2pad eerie-blackbg v5pad rellax" data-rellax-speed="0.3">
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">Front-end: HTML5</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">Back-end: -</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">Deployment & Dev Tools: Moodle, Blackboard</li>
-                                <li class="v1pad h1pad raisin-blackbg rellax" data-rellax-speed="0.3">Work Flow Tools: JIRA, Confluence</li>
-                            </ul>
-                            <div class="h2pad">
-                                <ul class="no-bullets">
-                                    <li class="v1pad">Used JIRA to keep track of courses as well as documenting errors and commenting on issues.</li>
-                                    <li class="v1pad">Editing new online courses, starting with Word then converting to and editing it in XML, then to HTML in order to upload it to the learning platform Moodle.</li>
-                                    <li class="v1pad">Doing a lot of independent work on editing the courses but also reviewing courses from team members and collaborating with them to fine-tune the course.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume-inside-li-other dark-liverbg">
-                            <div class="h2pad v2pad">
-                                <h4><strong>Junior Software Developer</strong></h4>
-                                <h5>Open Gaming Solutions Inc. <p>Previous</p>
-                                </h5>
-                            </div>
-                            <ul class="no-bullets h2pad eerie-blackbg v6bottom rellax" data-rellax-speed="0.2">
-                                <li class="v1pad h1pad rellax raisin-blackbg" data-rellax-speed="0.1">Backend-end: Django</li>
-                                <li class="v1pad h1pad rellax raisin-blackbg" data-rellax-speed="0.1">Databases: PostgreSQL</li>
-                                <li class="v1pad h1pad rellax raisin-blackbg" data-rellax-speed="0.1">Deployment & Dev Tools: GitHub, Sublime, OSX</li>
-                                <li class=" v1pad h1pad rellax raisin-blackbg" data-rellax-speed="0.1">Work Flow Tools: JIRA, Confluence</li>
-                            </ul>
-                            <div class="h2pad v1pad">
-                                <ul class="no-bullets">
-                                    <li class="v1pad">Using Python and Django to develop backend code changes including Django Admin enhancements, platform changes and API development.</li>
-                                    <li class="v1pad">Documentation using Confluence Wiki as well as going through the process of architecting the code. Using various flow charts and presenting them to project managers and other developers.</li>
-                                    <li class="v1pad">Did onboarding for new employee, guided them through the Open Gaming Solutions Software Development Life Cycle. Also assisted them with the OGS code base and documentation standards.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
+    <!-- TUTORIAL -->
+    <section id="tutorial">
+        <div class="tutorials container v6top">
+        	  <div class="progress-container v2bottom">
+                            <div class="progress-bar" id="myBar5">
+                            </div>
+                        </div>
+            <h3 class="v2bottom">TUTORIALS</h3>
+            <p>Tutorials for random tech-related topics! Coming soon :)</p>
+            <span><button type="button" class="btn btn-outline-light">View Tutorials</button></span>
+        </div>
+    </section>
     <!-- CONTACT -->
-    <section class="contact v6pad">
-        <div class="row h6left v6pad">
+    <section id="contact" class="contact v6pad">
+        <div class="container v6pad">
+        	  <div class="progress-container v2bottom">
+                            <div class="progress-bar" id="myBar6">
+                            </div>
+                        </div>
             <h3>CONTACT</h3>
             <div class="form">
-                <p class="v2pad up">Please feel free to contact me through any of my social media outlets or ask me a question below!</p>
-                <img class="rellax down" data-rellax-speed=".6" src="src/images/computer-water.jpg" alt="computer water">
+                <div>
+                    <p class="v2pad up">Please feel free to contact me through any of my social media outlets or ask me a question below!</p>
+                    <ul class="row no-bullets">
+                        <li class="col-4 text-center">
+                            <i class="fab fa-github silver-pinktext fa-2x"></i>
+                        </li>
+                        <li class="col-4 text-center">
+                            <i class="fab fa-linkedin silver-pinktext fa-2x"></i>
+                        </li>
+                        <li class="col-4 text-center">
+                            <i class="fas fa-envelope silver-pinktext fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+                <img class="down" src="src/images/computer-water.jpg" alt="computer water">
                 <!-- other form -->
-                <div class="container dark-liverbg" id="container">
+                <div class="dark-liverbg" id="container">
                     <form action="https://formsubmit.co/piechatzek@hotmail.com" method="post" id="contact_form">
-                    	<!-- need to make a THANK YOU page -->
-                    	<input type="hidden" name="_next" value="https://www.google.ca/">
-                    
+                        <!-- need to make a THANK YOU page -->
+                        <input type="hidden" name="_next" value="https://www.google.ca/">
                         <div class="name">
                             <label for="name"></label>
-                            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                            <input type="text" placeholder="My name" name="name" id="name_input" required>
                         </div>
                         <div class="email">
                             <label for="email"></label>
-                            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                            <input type="email" placeholder="My e-mail" name="email" id="email_input" required>
                         </div>
                         <div class="question">
                             <label for="question"></label>
@@ -278,11 +290,6 @@
         </div>
         <p class="text-center">MP Designs 2020</p>
     </section>
-    <!-- JAVASCRIPT -->
-    <script src="rellax.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() { myFunction() };
@@ -290,12 +297,17 @@
     function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
+        // var scrolled = (winScroll / height) * 100;
+        var scrolled = (winScroll / height) * 300;
 
         if (scrolled < 3) { scrolled = 3 };
         console.log(scrolled, "height");
         document.getElementById("myBar").style.width = scrolled + "%";
-
+        document.getElementById("myBar2").style.width = scrolled + "%";
+        document.getElementById("myBar3").style.width = (scrolled - 100) + "%";
+         document.getElementById("myBar4").style.width = (scrolled - 170) + "%";
+ document.getElementById("myBar5").style.width = (scrolled - 210) + "%";
+  document.getElementById("myBar6").style.width = (scrolled - 225) + "%";
         // Scroll for dim
         let scrollForDim = (350 - winScroll) / 100;
 
@@ -309,21 +321,20 @@
 
 
     }
-    // RELLAX
-    var rellax = new Rellax('.rellax');
+
 
     // SLIDER
-    $(document).ready(function() {
-        $('.fade').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear',
-            arrows: false,
-            adaptiveHeight: true
-        });
-    });
+    // $(document).ready(function() {
+    //     $('.fade').slick({
+    //         dots: true,
+    //         infinite: true,
+    //         speed: 500,
+    //         fade: true,
+    //         cssEase: 'linear',
+    //         arrows: false,
+    //         adaptiveHeight: true
+    //     });
+    // });
     </script>
 </body>
 

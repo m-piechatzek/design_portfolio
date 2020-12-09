@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: #fdfcfc;
+    color: #fdfcfc !important;
 }
 
 a:visited {
@@ -256,14 +256,14 @@ a:visited {
 }
 
 .btn-outline-light {
-    color: #fdfcfc;
-    border-color: #fdfcfc;
+    color: #bfaaad;
+    border-color: #bfaaad;
 }
 
 .btn-outline-light:hover {
-    color: #161718;
-    background-color: #fdfcfc;
-    border-color: #fdfcfc;
+    color: #161718 !important;
+    background-color: #bfaaad;
+    border-color: #bfaaad;
 }
 
 /* HEADER */
@@ -298,10 +298,47 @@ a:visited {
     grid-column: 5 / span 1;
 }
 
+/* ALL OTHER MENUS WITH HOME */
+.menu-home {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 3fr .7fr .7fr .7fr .7fr .7fr .3fr;
+    grid-template-rows: 1fr;
+
+    grid-gap: 10px;
+    opacity: 1 !important;
+    z-index: 11;
+
+}
+
+.menu-home .home {
+
+    grid-column: 2 / span 1;
+}
+
+.menu-home .portfolio {
+
+    grid-column: 3 / span 1;
+}
+
+.menu-home .resume {
+
+    grid-column: 4 / span 1;
+}
+
+.menu-home .tutorials {
+
+    grid-column: 5 / span 1;
+}
+
+.menu-home .contact {
+    grid-column: 6 / span 1;
+}
+
 /*COVER*/
 .cover {
 
-    background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
+    /*background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);*/
     background-size: cover;
     width: 100%;
     opacity: 1;
@@ -319,14 +356,14 @@ a:visited {
 /* The progress container (grey background) */
 .progress-container {
     width: 90%;
-    height: 3px;
+    height: 2px;
     background: rgb(253, 252, 252, 0);
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-    height: 3px;
-    background: #fdfcfc;
+    height: 2px;
+    background: #bfaaad;
     width: 3%;
 }
 
@@ -1150,4 +1187,24 @@ textarea[id='question_input'] {
   input[type='text'], input[type='email'], textarea[id='question_input'] {
         font-size: 0.875em;
     }
+}
+
+/*PARALLAX*/
+.height-all {
+	height: 100%;
+}
+.parallax {
+  /* The image used */
+ 
+     background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
+
+   /*Full height */
+  height: 100%; 
+  /*width: 100vw;*/
+
+  /*Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
