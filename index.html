@@ -302,17 +302,17 @@
         var scrolled = (winScroll / height) * 300;
 
         if (scrolled < 3) { scrolled = 3 };
-        if (scrolled > 100) { scrolled = ((winScroll/width) / height) * 300; };
-        // if (scrolled > 200) { scrolled = scrolled - 180 };
-        console.log(scrolled, "height");
+        // if (scrolled > 100) { winScroll = 100;
+        // var scrolled = (winScroll / height) * 300; };
+      
         document.getElementById("myBar").style.width = scrolled + "%";
         document.getElementById("myBar2").style.width = scrolled + "%";
-        document.getElementById("myBar3").style.width = (scrolled - 100) + "%";
-        document.getElementById("myBar4").style.width = (scrolled - 170) + "%";
-        document.getElementById("myBar5").style.width = (scrolled - 210) + "%";
-        // document.getElementById("myBar6").style.width = (scrolled - 225) + "%";
-        console.log("myBar6", scrolled - (scrolled*0.166));
-        document.getElementById("myBar6").style.width = scrolled - (scrolled*0.85) + "%";
+        document.getElementById("myBar3").style.width = (scrolled - 70) + "%";
+        document.getElementById("myBar4").style.width = (scrolled - 100) + "%";
+        console.log("myBar4", (scrolled > 100 ? (scrolled) + "%" : (scrolled - 95) + "%"));
+        document.getElementById("myBar5").style.width = (scrolled - 200) + "%";
+        document.getElementById("myBar6").style.width = (scrolled - 250) + "%";
+       
         // Scroll for dim
         let scrollForDim = (350 - winScroll) / 100;
 
@@ -320,7 +320,7 @@
             scrollForDim = .50;
         }
 
-        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim", height, "height", width, "width");
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim", height, "height", width, "width", document.documentElement.scrollTop, "scholltop");
         document.getElementById("cover").style.opacity = scrollForDim;
         // for moving photo
 
