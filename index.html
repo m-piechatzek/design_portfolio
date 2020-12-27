@@ -123,10 +123,10 @@
     <section id="portfolio">
         <div class="container">
             <div class="portfolio v6top ">
-                        <div class="progress-container">
-                            <div class="progress-bar" id="myBar3">
-                            </div>
-                        </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar3">
+                    </div>
+                </div>
                 <h3 class="v2pad">PORTFOLIO</h3>
                 <div class="monika-portfolio">
                     <div>
@@ -172,10 +172,10 @@
                 <h6 class="exp">3 years of experience</h6>
             </div>
             <div>
-            	  <div class="progress-container v2bottom">
-                            <div class="progress-bar" id="myBar4">
-                            </div>
-                        </div>
+                <div class="progress-container v2bottom">
+                    <div class="progress-bar" id="myBar4">
+                    </div>
+                </div>
                 <h3 class="v2bottom">RESUME</h3>
             </div>
             <div>
@@ -231,10 +231,10 @@
     <!-- TUTORIAL -->
     <section id="tutorial">
         <div class="tutorials container v6top">
-        	  <div class="progress-container v2bottom">
-                            <div class="progress-bar" id="myBar5">
-                            </div>
-                        </div>
+            <div class="progress-container v2bottom">
+                <div class="progress-bar" id="myBar5">
+                </div>
+            </div>
             <h3 class="v2bottom">TUTORIALS</h3>
             <p>Tutorials for random tech-related topics! Coming soon :)</p>
             <span><button type="button" class="btn btn-outline-light">View Tutorials</button></span>
@@ -243,10 +243,10 @@
     <!-- CONTACT -->
     <section id="contact" class="contact v6pad">
         <div class="container v6pad">
-        	  <div class="progress-container v2bottom">
-                            <div class="progress-bar" id="myBar6">
-                            </div>
-                        </div>
+            <div class="progress-container v2bottom">
+                <div class="progress-bar" id="myBar6">
+                </div>
+            </div>
             <h3>CONTACT</h3>
             <div class="form">
                 <div>
@@ -266,9 +266,9 @@
                 <img class="down" src="src/images/computer-water.jpg" alt="computer water">
                 <!-- other form -->
                 <div class="dark-liverbg" id="container">
-                    <form action="https://formsubmit.co/piechatzek@hotmail.com" method="post" id="contact_form">
+                    <form action="https://formsubmit.co/mpiechatzek@protonmail.com" method="post" id="contact_form">
                         <!-- need to make a THANK YOU page -->
-                        <input type="hidden" name="_next" value="https://www.google.ca/">
+                        <input type="hidden" name="_next" value="thankyou.html">
                         <div class="name">
                             <label for="name"></label>
                             <input type="text" placeholder="My name" name="name" id="name_input" required>
@@ -297,17 +297,22 @@
     function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var width = window.innerWidth;
         // var scrolled = (winScroll / height) * 100;
         var scrolled = (winScroll / height) * 300;
 
         if (scrolled < 3) { scrolled = 3 };
+        if (scrolled > 100) { scrolled = ((winScroll/width) / height) * 300; };
+        // if (scrolled > 200) { scrolled = scrolled - 180 };
         console.log(scrolled, "height");
         document.getElementById("myBar").style.width = scrolled + "%";
         document.getElementById("myBar2").style.width = scrolled + "%";
         document.getElementById("myBar3").style.width = (scrolled - 100) + "%";
-         document.getElementById("myBar4").style.width = (scrolled - 170) + "%";
- document.getElementById("myBar5").style.width = (scrolled - 210) + "%";
-  document.getElementById("myBar6").style.width = (scrolled - 225) + "%";
+        document.getElementById("myBar4").style.width = (scrolled - 170) + "%";
+        document.getElementById("myBar5").style.width = (scrolled - 210) + "%";
+        // document.getElementById("myBar6").style.width = (scrolled - 225) + "%";
+        console.log("myBar6", scrolled - (scrolled*0.166));
+        document.getElementById("myBar6").style.width = scrolled - (scrolled*0.85) + "%";
         // Scroll for dim
         let scrollForDim = (350 - winScroll) / 100;
 
@@ -315,7 +320,7 @@
             scrollForDim = .50;
         }
 
-        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim", height, "height", width, "width");
         document.getElementById("cover").style.opacity = scrollForDim;
         // for moving photo
 
