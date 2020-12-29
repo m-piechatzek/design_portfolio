@@ -77,6 +77,42 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <p>Please check back for updates on tutorials!</p>
+        </div>
+    </section>
+    <p class="text-center v6pad">MP Designs 2020</p>
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        // var scrolled = (winScroll / height) * 100;
+        var scrolled = (winScroll / height) * 300;
+
+        if (scrolled < 3) { scrolled = 3 };
+        if (scrolled > 100) { scrolled = 100 };
+        console.log(scrolled, "height");
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+        document.getElementById("myBar6").style.width = (scrolled - 70) + "%";
+        // Scroll for dim
+        let scrollForDim = (350 - winScroll) / 100;
+
+        if (scrollForDim < .50) {
+            scrollForDim = .50;
+        }
+
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+        document.getElementById("cover").style.opacity = scrollForDim;
+        // for moving photo
+
+
+    }
+    </script>
 </body>
 
 </html>

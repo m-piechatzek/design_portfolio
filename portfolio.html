@@ -77,6 +77,83 @@
             </div>
         </div>
     </section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio v6top ">
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar3">
+                    </div>
+                </div>
+                <h3 class="v2pad">PORTFOLIO</h3>
+                <div class="monika-portfolio">
+                    <div>
+                        <h6>oct | 31 | 2020</h6>
+                        <h1 class="whitetext">MONIKA PIECHATZEK PORTFOLIO</h1>
+                        <p class="v1pad">My current portfolio website to showcase my skills. Used those layers lots, they're so hot right now. Also smol bits of animationz. Enjoi.</p>
+                   
+                    </div>
+                    <div class="dark-liverbg v6pad h2pad portfolio-imgs">
+                        <img src="src/images/mini-mon-pie-website.png" alt="">
+                        <img src="src/images/about.png" alt="">
+                        <img src="src/images/portfolio.png" alt="">
+                    </div>
+                    <div class="raisin-blackbg v3pad h3pad">
+                        <h4>Beauty Specs</h4>
+                        <div>
+                            <h5>Inspirations</h5>
+                            <!-- <img src="src/images/sketch1.jpg" alt=""> -->
+                            <h5>Sketch</h5>
+                            <h5>Photographs</h5>
+                            <h5>Colors</h5>
+                            <h5>Typography</h5>
+                        </div>
+                        <h4>Tech Specs</h4>
+                        <div>
+                            <h5>html5</h5>
+                            <h5>css3</h5>
+                            <h5>Bootstrap</h5>
+                            <h5>javascript</h5>
+                            <h5>jQuery</h5>
+                            <h5>webpack</h5>
+                            <h5>github</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="text-center v6pad">MP Designs 2020</p>
+       <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        // var scrolled = (winScroll / height) * 100;
+        var scrolled = (winScroll / height) * 300;
+
+        if (scrolled < 3) { scrolled = 3 };
+        if (scrolled > 100) { scrolled = 100 };
+        console.log(scrolled, "height");
+        document.getElementById("myBar").style.width = scrolled + "%";
+       
+        document.getElementById("myBar3").style.width = (scrolled - 70) + "%";
+        // Scroll for dim
+        let scrollForDim = (350 - winScroll) / 100;
+
+        if (scrollForDim < .50) {
+            scrollForDim = .50;
+        }
+
+        console.log(scrolled, "scrooled", winScroll, "winScroll", scrollForDim, "dim");
+        document.getElementById("cover").style.opacity = scrollForDim;
+        // for moving photo
+
+
+    }
+    </script>
 </body>
 
 </html>
