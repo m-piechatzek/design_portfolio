@@ -1227,7 +1227,7 @@ textarea[id='question_input'] {
 
     /*Full height */
     height: 100%;
-    /*width: 100vw;*/
+    width: 100vw;
 
     /*Create the parallax scrolling effect */
     background-attachment: fixed;
