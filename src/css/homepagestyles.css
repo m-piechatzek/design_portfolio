@@ -1226,7 +1226,7 @@ textarea[id='question_input'] {
     background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
 
     /*Full height */
-    height: 100%;
+    /*height: 100%;*/
     width: 100vw;
 
     /*Create the parallax scrolling effect */
@@ -1235,19 +1235,19 @@ textarea[id='question_input'] {
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media screen and (max-width: 650px) {
+/*@media screen and (max-width: 650px) {
 	.parallax {
-    /* The image used */
+    
 
     background-image: url("../../src/images/mountain-night.jpg"), linear-gradient(#151617, #ffffff);
 
-    /*Full height */
+    
     height: auto;
     width: 100vw;
 
-    /*Create the parallax scrolling effect */
+    
     background-attachment: unset;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}}
+}}*/
